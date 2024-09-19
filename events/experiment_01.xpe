@@ -1,0 +1,63 @@
+#Expyriment 0.10.0 (Python 3.7.4), .xpe-file, coding: UTF-8
+#date: Thu Sep 19 2024 16:28:03
+#sha1: b8e93c
+#modules: utils.py (cf6c13)
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Linux', node='is157877', release='6.8.0-40-generic', version='#40~22.04.3-Ubuntu SMP PREEMPT_DYNAMIC Tue Jul 30 17:30:19 UTC 2', machine='x86_64', processor='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+162,design,log,
+#design: #exp: 20k-phrases
+#design: block_cnt,block_id,trial_cnt,trial_id
+162,design,logged,
+162,Experiment,started
+178,Stimulus,presented,3
+430,Keyboard,received,32,wait
+445,stdout,received,'Audio duration: 4.0778125'
+462,Stimulus,presented,0
+1462,Stimulus,played,b'audio/phrase_modified_1.wav'
+6909,Stimulus,presented,1
+6909,stdout,received,'Start:6.91'
+6909,Stimulus,played,b'bip.wav'
+10294,Keyboard,received,32,wait
+10294,stdout,received,'End:10.29'
+10294,Stimulus,played,b'boop.wav'
+10294,stdout,received,'Time took:3.39'
+10294,stdout,received,'4.1578125'
+10294,stdout,received,'Accuracy(%):81.41'
+11308,stdout,received,'Audio duration: 1.8028333333333333'
+11323,Stimulus,presented,0
+12323,Stimulus,played,b'audio/phrase_modified_0.wav'
+15323,Stimulus,presented,1
+15323,stdout,received,'Start:15.32'
+15323,Stimulus,played,b'bip.wav'
+17513,Keyboard,received,32,wait
+17513,stdout,received,'End:17.51'
+17513,Stimulus,played,b'boop.wav'
+17513,stdout,received,'Time took:2.19'
+17513,stdout,received,'1.8828333333333334'
+17513,stdout,received,'Accuracy(%):83.69'
+18522,stdout,received,'Audio duration: 3.8278125'
+18538,Stimulus,presented,0
+19538,Stimulus,played,b'audio/phrase_modified_2.wav'
+24702,Stimulus,presented,1
+24703,stdout,received,'Start:24.70'
+24703,Stimulus,played,b'bip.wav'
+27304,Keyboard,received,32,wait
+27304,stdout,received,'End:27.30'
+27304,Stimulus,played,b'boop.wav'
+27304,stdout,received,'Time took:2.60'
+27304,stdout,received,'3.9078125'
+27304,stdout,received,'Accuracy(%):66.58'
+28320,stdout,received,'Audio duration: 2.6528125'
+28335,Stimulus,presented,0
+29335,Stimulus,played,b'audio/phrase_modified_3.wav'
+33234,Stimulus,presented,1
+33234,stdout,received,'Start:33.23'
+33234,Stimulus,played,b'bip.wav'
+36133,Keyboard,received,32,wait
+36134,stdout,received,'End:36.13'
+36134,Stimulus,played,b'boop.wav'
+36134,stdout,received,'Time took:2.90'
+36134,stdout,received,'2.7328125'
+36134,stdout,received,'Accuracy(%):93.92'
+37151,Experiment,ended
