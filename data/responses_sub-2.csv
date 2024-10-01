@@ -1,0 +1,6 @@
+subject_id,audio,response_start_time (s),response_end_time (s),time_took (s),audio_duration (s),accuracy (%)
+2,audio/phrase_modified_4.wav,12.08,13.594,1.5139999999999993,9.293791666666667,16.151415071275842
+2,audio/The_intricate_machinery_hummed._alloy.wav_modified.wav,3.823,17.198,13.375,2.5978333333333334,0
+2,audio/Were_they_late_because_they_missed_the_bus_alloy.wav_modified.wav,21.416,611.92,590.5039999999999,2.7178333333333335,0
+2,audio/She_danced_gracefully_under_the_starry_night_sky._alloy.wav_modified.wav,5.314,7.074,1.7599999999999998,3.6058049886621317,47.75076287036125
+2,audio/Was_he_tired_for_he_had_been_driving_all_night_alloy.wav_modified.wav,12.463,15.503,3.040000000000001,3.2938095238095237,90.10585744530701

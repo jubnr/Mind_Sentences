@@ -38,8 +38,8 @@ control.defaults.initialize_delay = 0
 control.defaults.audio_system_buffer_size = 4096  
 control.audiosystem_channels = 1
 
-control.audiosystem_sample_rate = 48000 #44100  
-control.set_develop_mode(True)
+control.audiosystem_sample_rate = 44100 #48000  
+control.set_develop_mode(False)
 control.initialize(exp)
 
 fixcrossWhite = stimuli.FixCross(size=(45, 45), line_width=3,
@@ -66,7 +66,6 @@ for audio_path in audio_files:
     stim.preload()
 
     audio_duration = utils.get_audio_duration(audio_path)
-    print("Audio duration:", audio_duration)
 
     #utils.send_trigger()
 
@@ -82,16 +81,13 @@ for audio_path in audio_files:
 
     fixcrossGreen.present(clear=True, update=True) 
     response_start_time = exp.clock.time / 1000
-    print(f"Start:{response_start_time:.2f}")
     start_sound.play()
     
     exp.keyboard.wait()
     response_end_time = exp.clock.time / 1000
-    print(f"End:{response_end_time:.2f}")
     stop_sound.play()
 
     time_took = response_end_time - response_start_time
-    print(f"Time took:{time_took:.2f}")
 
     accuracy = calculate_accuracy(audio_duration, response_end_time)
     print(f"Accuracy(%):{accuracy:.2f}")

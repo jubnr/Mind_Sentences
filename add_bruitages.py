@@ -1,7 +1,7 @@
 from pydub import AudioSegment
 from pydub.playback import play
-import os
 from pathlib import Path
+import os
 
 bip_sound = AudioSegment.from_file("bip.wav")  
 boop_sound = AudioSegment.from_file("boop.wav")  
@@ -16,8 +16,8 @@ def add_bruitages(phrase_file, index):
 
     phrase_with_bruitages = bip_sound + silence + phrase + boop_sound
 
-    output_filename = f"{output_folder}/phrase_modified_{index}.wav"
-    phrase_with_bruitages.export(output_filename, format="wav") #, parameters=["-ar", "44100"]
+    output_filename = f"{output_folder}/{phrase_file}"
+    phrase_with_bruitages.export(output_filename, format="wav", parameters=["-ar", "44100"])
     print(f"Saved: {output_filename}")
 
 for i, fichier in enumerate(os.listdir(input_folder)):

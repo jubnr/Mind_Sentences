@@ -1,0 +1,11 @@
+#Expyriment 0.10.0 (Python 3.7.4), .xpd-file, coding: UTF-8
+#date: Tue Oct 01 2024 10:19:55
+#--EXPERIMENT INFO
+#e mainfile: experiment.py
+#e sha1: 068277
+#e modules: utils.py (cf6c13)
+#e Experiment: 20k-phrases
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 2
+subject_id,
