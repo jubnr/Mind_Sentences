@@ -16,8 +16,8 @@ def clear_screen():
     exp.screen.update()
 
 def calculate_accuracy(audio_duration, response_end_time):
-    real_time_audio = audio_duration - (BIP_WINDOW - SILENCE_WINDOW)
-    print(real_time_audio)
+    #real_time_audio = audio_duration - (BIP_WINDOW - SILENCE_WINDOW)
+    real_time_audio = audio_duration # added in V2
     time_difference = abs(time_took - real_time_audio)
     normalized_difference = time_difference / real_time_audio
     accuracy = max(0, 100 * (1 - normalized_difference))
@@ -62,7 +62,7 @@ start_sound.preload()
 stop_sound.preload()
 
 for audio_path in audio_files:
-    stim = stimuli.Audio(audio_path)
+    stim = stimuli.Audio(audio_path) # to be changed
     stim.preload()
 
     audio_duration = utils.get_audio_duration(audio_path)
@@ -74,19 +74,20 @@ for audio_path in audio_files:
 
     stim.present()
     control.wait_end_audiosystem(process_control_events=True)
-
+    
     #utils.send_trigger()
 
-    exp.clock.wait(1000)
-
+    #exp.clock.wait(2000)
+    clear_screen()
+    exp.keyboard.wait()
     fixcrossGreen.present(clear=True, update=True) 
     response_start_time = exp.clock.time / 1000
-    start_sound.play()
     
-    exp.keyboard.wait()
+    #start_sound.play()
+    exp.keyboard.wait() # added in V2
     response_end_time = exp.clock.time / 1000
-    stop_sound.play()
-
+    #stop_sound.play()
+    exp.clock.wait(1000)
     time_took = response_end_time - response_start_time
 
     accuracy = calculate_accuracy(audio_duration, response_end_time)
