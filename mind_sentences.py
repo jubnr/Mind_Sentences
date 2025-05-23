@@ -15,8 +15,6 @@ to the next sentence. The experiment measures the mental repetition time and all
 participants to indicate if they can't remember a sentence by clicking on the right
 red button. The sentence is stored in a list and replayed at the end of the experiment.
 
-[Potential TODO: Replay randomly the sentences skipped, not necessarily at the end]
-
 Key Features:
 -------------
 - Optional training phase (--training).
